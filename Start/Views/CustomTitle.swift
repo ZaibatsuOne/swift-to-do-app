@@ -1,20 +1,14 @@
-//
-//  CustomTitle.swift
-//  Start
-//
-//  Created by User on 30.09.2023.
-//
-
 import UIKit
 
 class CustomTitle: UILabel {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    init(text: String){
+        super.init(frame: .zero)
+        self.text = text
+        self.font = UIFont.boldSystemFont(ofSize: 24)
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

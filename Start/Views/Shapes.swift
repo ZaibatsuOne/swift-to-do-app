@@ -1,12 +1,7 @@
+//import UIKit
+//import SnapKit
 //
-//  Shapes.swift
-//  Start
-//
-//  Created by User on 30.09.2023.
-//
-
-import UIKit
-
-class Shapes: UIImage {
-
-}
+//class Shapes: ViewController {
+//    let shapesImg = UIImageView()
+//    shapesImg.image = UIImage(named: "shape")
+//}
