@@ -25,6 +25,7 @@ class LoginPageController: UIViewController {
         super.viewDidLoad()
 
         registerButton.addTarget(self, action: #selector(goRegisterPage), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(goListPage), for: .touchUpInside)
         navigationController?.navigationBar.isHidden = true
         UISetup()
     }
@@ -96,5 +97,9 @@ class LoginPageController: UIViewController {
     @objc func goRegisterPage(){
         let registerPageVC = RegisterController()
         navigationController?.pushViewController(registerPageVC, animated: true)
+    }
+    @objc func goListPage(){
+        let listPageVC = ListController()
+        navigationController?.pushViewController(listPageVC, animated: true)
     }
 }

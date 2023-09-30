@@ -23,6 +23,8 @@
 		CE037CBC2AC842BE00661158 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE037CBB2AC842BE00661158 /* FirebaseAnalyticsSwift */; };
 		CE037CBE2AC842BE00661158 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = CE037CBD2AC842BE00661158 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		CE037CC02AC842BE00661158 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = CE037CBF2AC842BE00661158 /* FirebaseAppCheck */; };
+		CE365B7A2AC8598200574EC9 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE365B792AC8598200574EC9 /* ListController.swift */; };
+		CE365B7C2AC859D100574EC9 /* ListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE365B7B2AC859D100574EC9 /* ListStoryboard.storyboard */; };
 		CE9806C22AC686C900B934DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9806C12AC686C900B934DF /* AppDelegate.swift */; };
 		CE9806C42AC686C900B934DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9806C32AC686C900B934DF /* SceneDelegate.swift */; };
 		CE9806C62AC686C900B934DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9806C52AC686C900B934DF /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		CE037CAC2AC82DA600661158 /* LoginPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPageController.storyboard; sourceTree = "<group>"; };
 		CE037CAE2AC8391B00661158 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		CE037CB42AC83FC100661158 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE365B792AC8598200574EC9 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		CE365B7B2AC859D100574EC9 /* ListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListStoryboard.storyboard; sourceTree = "<group>"; };
 		CE9806BE2AC686C900B934DF /* Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9806C12AC686C900B934DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9806C32AC686C900B934DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		CE365B782AC8594600574EC9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CE365B792AC8598200574EC9 /* ListController.swift */,
+				CE365B7B2AC859D100574EC9 /* ListStoryboard.storyboard */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		CE9806B52AC686C900B934DF = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CE037CA02AC8026A00661158 /* Views */,
+				CE365B782AC8594600574EC9 /* List */,
 				CE037CA92AC82D5D00661158 /* Login */,
 				CE037C9B2AC7F8F600661158 /* Register */,
 				CE9806C12AC686C900B934DF /* AppDelegate.swift */,
@@ -227,6 +241,7 @@
 			files = (
 				CE9806CE2AC686CB00B934DF /* LaunchScreen.storyboard in Resources */,
 				CE037C9F2AC7F91900661158 /* RegisterController.storyboard in Resources */,
+				CE365B7C2AC859D100574EC9 /* ListStoryboard.storyboard in Resources */,
 				CE9806CB2AC686CB00B934DF /* Assets.xcassets in Resources */,
 				CE9806C92AC686C900B934DF /* Main.storyboard in Resources */,
 				CE037CAD2AC82DA600661158 /* LoginPageController.storyboard in Resources */,
@@ -292,6 +307,7 @@
 				CE037CA82AC8143000661158 /* CustomSubtitle.swift in Sources */,
 				CE037CAF2AC8391B00661158 /* Shapes.swift in Sources */,
 				CE037CAB2AC82D9600661158 /* LoginPageController.swift in Sources */,
+				CE365B7A2AC8598200574EC9 /* ListController.swift in Sources */,
 				CE037CA22AC8028C00661158 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
