@@ -6,7 +6,7 @@ class RegisterController: UIViewController {
     let halfFullHeight = UIScreen.main.bounds.height / 8
     
     //MARK: - UI Components
-    private let headerTitle = CustomTitle(text: "Welcome Onboard!")
+    private let headerTitle = CustomTitle(text: "Welcome Onboard!", colorVariant: .black)
     private let headerSubtitle = CustomSubtitle(text: "Lets help you in completing your tasks")
     private let registerButton = CustomButton(title: "Register")
     let signInButton = UIButton()

@@ -6,7 +6,7 @@ class LoginPageController: UIViewController {
     private let halfFullHeight = UIScreen.main.bounds.height / 8
 
     //MARK: - UI Components
-    private let headerTitle = CustomTitle(text: "Welcome back!")
+    private let headerTitle = CustomTitle(text: "Welcome back!", colorVariant: .black)
     private let loginPageImg = UIImageView()
     private let loginButton = CustomButton(title: "Login")
     private let registerButton = UIButton()

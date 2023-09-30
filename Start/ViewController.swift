@@ -6,7 +6,7 @@ class ViewController: UIViewController {
     
     // MARK: - UI Components
     private let getStartButton = CustomButton(title: "Get Start")
-    private let headerTitle = CustomTitle(text: "Get things done with TODO")
+    private let headerTitle = CustomTitle(text: "Get things done with TODO", colorVariant: .black)
     private let headerSubtitle = CustomSubtitle(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere gravida purus id eu condimentum est diam quam. Condimentum blandit diam.")
     
     // MARK: - Life Cycle
