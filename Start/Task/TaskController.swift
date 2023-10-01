@@ -44,7 +44,7 @@ class TaskController: UIViewController, UITextFieldDelegate {
             maker.top.equalTo(taskName).inset(100)
             maker.right.equalToSuperview().inset(20)}
         
-        cancelButton.setTitle("Cancel", for: .normal)
+        cancelButton.setTitle("Cancel/Back", for: .normal)
         cancelButton.setTitleColor(.systemRed, for: .normal)
         
         cancelButton.snp.makeConstraints{maker in
@@ -68,6 +68,8 @@ class TaskController: UIViewController, UITextFieldDelegate {
             
             try! realm.commitWrite()
             completitionHandler?()
+            
+            taskName.text = ""
         }
         else{
             let alertModal = UIAlertController(title: "Внимание", message: "Поле для добавления задачи не может быть пустым", preferredStyle: .alert)

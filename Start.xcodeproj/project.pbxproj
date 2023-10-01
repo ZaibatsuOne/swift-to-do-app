@@ -35,6 +35,8 @@
 		CEC7B6E92AC923CB00302F13 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7B6E82AC923CB00302F13 /* TaskList.swift */; };
 		CEC7B6EC2AC926F700302F13 /* TaskStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7B6EB2AC926F700302F13 /* TaskStoryboard.storyboard */; };
 		CEC7B6EE2AC9270900302F13 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7B6ED2AC9270900302F13 /* TaskController.swift */; };
+		CEC7B6F12AC94E6C00302F13 /* TaskPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7B6F02AC94E6C00302F13 /* TaskPageController.swift */; };
+		CEC7B6F32AC94E7A00302F13 /* TaskPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7B6F22AC94E7A00302F13 /* TaskPageStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		CEC7B6E82AC923CB00302F13 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		CEC7B6EB2AC926F700302F13 /* TaskStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskStoryboard.storyboard; sourceTree = "<group>"; };
 		CEC7B6ED2AC9270900302F13 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		CEC7B6F02AC94E6C00302F13 /* TaskPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPageController.swift; sourceTree = "<group>"; };
+		CEC7B6F22AC94E7A00302F13 /* TaskPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskPageStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		CE9806C02AC686C900B934DF /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				CEC7B6EF2AC94E5400302F13 /* TaskPage */,
 				CE037CA92AC82D5D00661158 /* Login */,
 				CEC7B6EA2AC926DE00302F13 /* Task */,
 				CEC7B6E52AC9233900302F13 /* Model */,
@@ -178,6 +183,15 @@
 				CEC7B6ED2AC9270900302F13 /* TaskController.swift */,
 			);
 			path = Task;
+			sourceTree = "<group>";
+		};
+		CEC7B6EF2AC94E5400302F13 /* TaskPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEC7B6F02AC94E6C00302F13 /* TaskPageController.swift */,
+				CEC7B6F22AC94E7A00302F13 /* TaskPageStoryboard.storyboard */,
+			);
+			path = TaskPage;
 			sourceTree = "<group>";
 		};
 		D70CBF15EF56792D5756D9A2 /* Frameworks */ = {
@@ -271,6 +285,7 @@
 				CE037C9F2AC7F91900661158 /* RegisterController.storyboard in Resources */,
 				CE365B7C2AC859D100574EC9 /* ListStoryboard.storyboard in Resources */,
 				CE9806CB2AC686CB00B934DF /* Assets.xcassets in Resources */,
+				CEC7B6F32AC94E7A00302F13 /* TaskPageStoryboard.storyboard in Resources */,
 				CEC7B6EC2AC926F700302F13 /* TaskStoryboard.storyboard in Resources */,
 				CE9806C92AC686C900B934DF /* Main.storyboard in Resources */,
 				CE037CAD2AC82DA600661158 /* LoginPageController.storyboard in Resources */,
@@ -335,6 +350,7 @@
 				CE9806C22AC686C900B934DF /* AppDelegate.swift in Sources */,
 				CE9806C42AC686C900B934DF /* SceneDelegate.swift in Sources */,
 				CE037CA82AC8143000661158 /* CustomSubtitle.swift in Sources */,
+				CEC7B6F12AC94E6C00302F13 /* TaskPageController.swift in Sources */,
 				CEC7B6E92AC923CB00302F13 /* TaskList.swift in Sources */,
 				CEC7B6E72AC9234700302F13 /* TaskItem.swift in Sources */,
 				CE037CAF2AC8391B00661158 /* Shapes.swift in Sources */,
