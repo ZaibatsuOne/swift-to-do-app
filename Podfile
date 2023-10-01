@@ -8,5 +8,6 @@ target 'Start' do
   # Pods for Start
 
 pod 'SnapKit' 
+pod 'RealmSwift' 
 
 end
