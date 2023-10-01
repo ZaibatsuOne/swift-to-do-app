@@ -9,8 +9,8 @@ class TaskPageController: UIViewController {
     
     
     //MARK: - UI Components
-    var item: TaskItem?
-    private var deleteionHandler: (() -> Void)?
+    public var item: TaskItem?
+    public var deletionHandler: (() -> Void)?
     private var taskTitle = UILabel()
     private let deleteButton = UIButton()
     private let goBackButton = UIButton()
@@ -19,7 +19,8 @@ class TaskPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        deleteButton.addTarget(self, action: #selector(deleteTask), for: .touchUpInside)
+        goBackButton.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         UISetup()
     }
     
@@ -31,9 +32,13 @@ class TaskPageController: UIViewController {
         view.addSubview(goBackButton)
         
         taskTitle.text = item?.name
+        taskTitle.numberOfLines = 0
+        taskTitle.font = UIFont.boldSystemFont(ofSize: 20)
         taskTitle.snp.makeConstraints{maker in
-            maker.centerX.equalToSuperview()
-            maker.centerY.equalToSuperview()}
+            maker.top.equalTo(goBackButton).inset(60)
+            maker.left.equalToSuperview().inset(20)
+            maker.right.equalToSuperview().inset(20)
+        }
         
         deleteButton.setTitle("Delete task", for: .normal)
         deleteButton.setTitleColor(.systemRed, for: .normal)
@@ -50,7 +55,20 @@ class TaskPageController: UIViewController {
     
     //MARK: - Selectors
     @objc func deleteTask(){
+        realm.beginWrite()
         
+        guard let myItem = self.item else { return  };
+        
+        realm.delete(myItem)
+        
+        try! realm.commitWrite()
+        
+        deletionHandler?()
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func goBack(){
+        _ = navigationController?.popViewController(animated: true)
     }
     
 

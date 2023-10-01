@@ -70,6 +70,7 @@ class TaskController: UIViewController, UITextFieldDelegate {
             completitionHandler?()
             
             taskName.text = ""
+            navigationController?.popViewController(animated: true)
         }
         else{
             let alertModal = UIAlertController(title: "Внимание", message: "Поле для добавления задачи не может быть пустым", preferredStyle: .alert)

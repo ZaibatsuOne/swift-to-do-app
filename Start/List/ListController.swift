@@ -36,6 +36,8 @@ class ListController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let taskPageVC = TaskPageController()
         navigationController?.pushViewController(taskPageVC, animated: true)
         
+        taskPageVC.deletionHandler = { self.refresh() }
+        
         taskPageVC.item = item
         
     }
